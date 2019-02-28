@@ -55,3 +55,67 @@ console.log(shiva);
 //
 console.log('Sachin is ' +myDetails.calcAge(1980)+' years old');
 */
+
+//DOM Maipulation
+//onmouseover 
+
+/*
+document.getElementById('btn').onmouseover = changeOnMouseOver;
+document.getElementById('btn').onmouseout = changeOnMouseOut;
+
+function changeOnMouseOver() {
+    var but = document.getElementById('btn');
+    but.style.background="red";
+
+}
+function changeOnMouseOut() {
+    var but = document.getElementById('btn');
+    but.style.background="blue";
+
+}
+
+//Using this keyword 
+function changeOnMouseOver() {
+    //var but = document.getElementById('btn');
+    this.style.background="red";
+
+}
+function changeOnMouseOut() {
+    //var but = document.getElementById('btn');
+    this.style.background="blue";
+
+}
+
+document.getElementById('btn').onmouseover = function(){
+    this.style.background="red";
+}
+
+
+document.getElementById('btn').onmouseout = function(){
+    this.style.background="blue";
+
+};
+
+document.getElementById('btn').onclick = function(){
+    alert("You Clicked on this Button");
+
+};
+*/
+//addEvent listner example
+
+var but = document.getElementById('btn');
+but.addEventListener('mouseover',changeOnMouseOver);
+but.addEventListener('mouseout',changeOnMouseOut);
+
+function changeOnMouseOver() {
+    //var but = document.getElementById('btn');
+    this.style.background="red";
+
+}
+function changeOnMouseOut() {
+    //var but = document.getElementById('btn');
+    this.style.background="blue";
+
+}
+//querySelector method for manipulating dom 
+document.querySelector('#hId').textContent="New Text";
