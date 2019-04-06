@@ -10,6 +10,15 @@ GAME RULES:
 
 */
 
+
+
+
+
+
+
+
+
+
 var scores, roundScore, activePlayer, gamePlaying;
 
 init();
